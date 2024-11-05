@@ -1,0 +1,62 @@
+/* Estilos generales para el navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+    /* Contenedor de la navbar */
+    .navbar {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        position: relative;
+    }
+
+    /* Logo alineado a la izquierda */
+    .navbar-brand {
+        position: absolute;
+        left: 1rem; /* Alinea el logo al borde izquierdo */
+        top: 10px; /* Añade un margen pequeño desde la parte superior */
+    }
+
+    .navbar-brand img {
+        max-width: 180px; /* Ajusta el tamaño del logo según necesites */
+    }
+
+    /* Menú hamburguesa alineado a la derecha */
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem; /* Alinea el botón de menú al borde derecho */
+        top: 50%;
+        transform: translateY(50%);
+    }
+
+    /* Ajusta la posición del menú desplegable para que se desplace hacia abajo */
+    .navbar-collapse {
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px; /* Añade un espacio para que el menú se despliegue hacia abajo */
+    }
+
+    /* Enlaces del menú centrados en la vista desplegable */
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0;
+    }
+}
+#myImage {
+    margin-top: 20px; /* Ajusta este valor para desplazar la imagen hacia abajo */
+    /* Para desplazarla hacia arriba, usa un valor negativo: margin-top: -20px; */
+}
